@@ -10,10 +10,7 @@ Deployed at: [https://a-box-of-feelings.onrender.com](https://a-box-of-feelings.
 - Detect primary emotion (joy, sadness, fear, anger, or disgust)
 - Retrieve a matching affirmation using the EmotiQuote API
 - Retrieve an inspirational quote using the QuotesHub API
-- Generate a pastel color gradient background based on the emotion
-- Responsive layout with a clean, minimal UI
-- Smooth scroll behavior between form and result
-- Fixed footer badge for attribution
+- Background colour changes based on the emotion detected using CSS Colors API
 
 ### APIs used
 
