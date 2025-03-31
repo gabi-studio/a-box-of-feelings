@@ -22,11 +22,15 @@ async function analyzeWithWatson(text) {
     text,
     features: { emotion: { document: true } }
   });
+
+  
   return response.result.emotion.document.emotion; 
+
+  
 
   console.log("Watson result:", response.result.emotion.document.emotion);
   return response.result.emotion.document.emotion;
-}
+} 
 
 // export the analyzeWithWatson function
 export default analyzeWithWatson;

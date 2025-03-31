@@ -17,6 +17,7 @@ analyzeRouter.post('/', async (req, res) => {
 
   try {
     const emotionScores = await analyzeWithWatson(text);
+    // sort the emotion scores in descending order and the first element is the primary emotion
     const primaryEmotion = Object.entries(emotionScores).sort((a, b) => b[1] - a[1])[0][0];
     const quote = await getQuote(primaryEmotion);
     const affirmation = await getAffirmation(primaryEmotion);
