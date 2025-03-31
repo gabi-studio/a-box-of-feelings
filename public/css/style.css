@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 0;
+    color: #232320;
+    background: #f4f4f4;
+    transition: background-color 3s ease;
+    /* opacity: 80%; */
+    transition: background-color 3s ease, opacity 3s ease;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+
+a {
+    color: #232320;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #43433d;
+}
+
+.tab-anchor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+  
+
+
+#container {
+    background: none;
+    padding: 1rem;
+    flex: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #232320;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #232320;
+}
+
+p {
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* styling of border inspired by: Tiffany Rayside: https://codepen.io/tmrDevelops/pen/NPXodB */
+.form-wrapper {
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 285px 18px 255px 25px/25px 255px 18px 285px;
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 5px solid  rgb(46, 44, 37);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    
+}
+
+.result {
+    background: #f4f4f4;
+    padding: 2rem;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 5px dashed  rgb(46, 44, 37);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+  
+  
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0.25rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #232320;
+    border-color: #232320;
+    color: #f4f4f4;
+    
+}
+
+button:hover {
+    background: #46463f;
+    border-color: #46463f;
+    color: #f4f4f4;
+    cursor: pointer;
+}   
+
+.reset {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #232320;
+    border-color: #232320;
+    color: #f4f4f4;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+  
+.reset:hover {
+    background: #43433d;
+    border-color: #46463f;
+    color: #f4f4f4;
+}
+  
+
+
+
+
+/* two columns unless on mobile */
+.grid {
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 2rem;
+    margin: 1rem auto;
+    
+}
+
+/* Footer styling */
+.site-footer {
+    text-align: center;
+    background: none;
+    color: #232320;
+    padding: 1rem;
+    font-size: 0.5rem;
+}
+
+.side-footer {
+    position: fixed;
+    bottom: 0rem;
+    right: 1rem;
+    background-color: none;
+    color: #232320;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    z-index: 999;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    
+}
+  
+.side-footer:hover {
+    opacity: 1;
+}
+
+
+  
+
+  
+/* Spinner style */
+/* #loading-spinner {
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin-bottom: 1rem;
+} */
+/*   
+#loading-spinner.visible {
+    display: flex;
+} */
+/*   
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ccc;
+    border-top-color: #9d0348;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+} */
+
+  /* Hide by default */
+/* .hidden {
+    display: none;
+} */
+  
+/* @keyframes spin {
+    to {
+        transform: rotate(360deg);
+}
+} */
+  
+
+/* #loading-spinner {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+
+#loading-spinner.visible {
+    display: block;
+    opacity: 1;
+} */
+  
+  
+  
+/* for smaller screens, stack the columns */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+  
