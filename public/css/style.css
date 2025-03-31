@@ -102,6 +102,7 @@ textarea {
     font-size: 1rem;
     border-radius: 5px;
     font-family: 'Nunito', sans-serif;
+    resize:none;
 }
 
 button {
@@ -240,7 +241,6 @@ button:hover {
 /* for smaller screens, stack the columns */
 @media (max-width: 768px) {
     .grid {
-        grid-template-columns: 1fr;
         gap: 1rem;
     }
 }
