@@ -29,7 +29,7 @@ async function getQuote(emotion) {
       const res = await fetch(`https://thequoteshub.com/api/tags/${tag}`);
       const data = await res.json();
 
-      console.log(`Quote API response for tag "${tag}":`, data);
+      // console.log(`Quote API response for tag "${tag}":`, data);
 
       if (Array.isArray(data.quotes) && data.quotes.length > 0) {
         // Select a random quote from the array of quotes

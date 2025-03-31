@@ -81,6 +81,8 @@ p {
     border: 5px solid  rgb(46, 44, 37);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
     
+    
+    
 }
 
 .result {
@@ -91,9 +93,12 @@ p {
     margin: 2rem auto;
     border: 5px dashed  rgb(46, 44, 37);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    
 }
   
-  
+form {
+    text-align: center;
+}  
 
 textarea {
     width: 100%;
@@ -107,6 +112,7 @@ textarea {
 
 button {
     margin-top: 1rem;
+    align-self: right; 
     padding: 0.5rem 1rem;
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
@@ -127,7 +133,13 @@ button:hover {
 }   
 
 .reset {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.reset-btn {
     display: inline-block;
+    
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     background: #232320;
@@ -140,7 +152,7 @@ button:hover {
     transition: all 0.3s ease;
 }
   
-.reset:hover {
+.reset-btn:hover {
     background: #43433d;
     border-color: #46463f;
     color: #f4f4f4;

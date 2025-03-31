@@ -32,13 +32,13 @@ app.post('/analyze', async (req, res) => {
 
   try {
     const emotionScores = await analyzeWithWatson(text);
-    console.log("Emotion scores:", emotionScores);
+    // console.log("Emotion scores:", emotionScores);
     const primaryEmotion = Object.entries(emotionScores).sort((a, b) => b[1] - a[1])[0][0];
-    console.log("Primary emotion:", primaryEmotion);
+    // console.log("Primary emotion:", primaryEmotion);
     const affirmation = await getAffirmation(primaryEmotion);
-    console.log("Affirmation:", affirmation);
+    // console.log("Affirmation:", affirmation);
     const quote = await getQuote(primaryEmotion);
-    console.log("Quote:", quote);
+    // console.log("Quote:", quote);
     const [color1, color2] = await getGradientColors(primaryEmotion);
 
     console.log("Colors:", color1, color2);
