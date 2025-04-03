@@ -22,6 +22,7 @@ Deployed at: [https://a-box-of-feelings.onrender.com](https://a-box-of-feelings.
 - [The Quotes Hub API](https://thequoteshub.com/)
 - [CSS Colors API](https://www.csscolorsapi.com/)
 
+
 > [!TIP]
 > You can use the following text samples to test different inputs to the sentiment analysis:
 > - Today felt heavy. I kept thinking about how distant I’ve become from people I used to be close to. It’s like I’m fading into the background of everyone’s life.
