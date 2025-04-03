@@ -12,10 +12,11 @@ body {
     color: #232320;
     background: #f4f4f4;
     transition: background-color 3s ease;
-    /* opacity: 80%; */
+    /* opacity: 50%; */
     transition: background-color 3s ease, opacity 3s ease;
     height: 100%;
 }
+
 
 .wrapper {
     display: flex;
@@ -53,13 +54,13 @@ a:hover {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #232320;
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     color: #232320;
 }
@@ -67,7 +68,7 @@ h2 {
 p {
     font-weight: 500;
     font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 
@@ -95,6 +96,14 @@ p {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
     
 }
+
+.submitted-text {
+    margin-top: 1rem;
+    padding: .75rem;
+    border-left: 3px solid #232320;
+    font-style: italic;
+}
+  
   
 form {
     text-align: center;
@@ -104,7 +113,7 @@ textarea {
     width: 100%;
     height: 150px;
     padding: 0.25rem;
-    font-size: 1rem;
+    font-size: 0.85rem;
     border-radius: 5px;
     font-family: 'Nunito', sans-serif;
     resize:none;
@@ -116,7 +125,7 @@ button {
     padding: 0.5rem 1rem;
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.85rem;
     border-radius: 10px;
     cursor: pointer;
     background: #232320;

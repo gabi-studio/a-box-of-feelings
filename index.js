@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// API imports
 import analyzeWithWatson from './components/watson-api.js';
 import getQuote from './components/quoteshub-api.js';
 import getAffirmation from './components/emotiquote-api.js';
@@ -22,15 +23,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-
+// index route for the main page
 app.get('/', (req, res) => {
   res.render('index');
 });
 
+// API route for analyzing text input
 app.post('/analyze', async (req, res) => {
   const { text } = req.body;
 
   try {
+
+    // get emotion scores from Watson
     const emotionScores = await analyzeWithWatson(text);
     // console.log("Emotion scores:", emotionScores);
     const primaryEmotion = Object.entries(emotionScores).sort((a, b) => b[1] - a[1])[0][0];
@@ -41,19 +45,21 @@ app.post('/analyze', async (req, res) => {
     // console.log("Quote:", quote);
     const [color1, color2] = await getGradientColors(primaryEmotion);
 
-    console.log("Colors:", color1, color2);
     res.render('index', {
       result: {
         primaryEmotion,
+        emotionScores,
         quote,
         affirmation,
         color1,
-        color2,
-      }
+        color2
+      },
+      submittedText: text 
     });
+
   } catch (err) {
-    console.error(err);
-    res.render('index', { result: { error: 'Error, please try again' } });
+    console.error("Analysis failed:", err);
+    res.status(500).json({ error: "Failed to analyze text. Please try again." });
   }
 });
 

@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("current-year").textContent = `${currentYear} A Box of Feelings`;
 
 
+
+
+
     // // Spinner logic
     // const form = document.querySelector("form");
     // const spinner = document.getElementById("loading-spinner");
@@ -43,4 +46,5 @@ document.addEventListener("DOMContentLoaded", () => {
   
     body.classList.add("loaded");
 });
+
   

@@ -6,12 +6,13 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="/css/style.css")
     script(src="/js/script.js" defer)
-    
+
   body(
     data-emotion=(result && result.primaryEmotion)
     data-color1=(result && result.color1)
     data-color2=(result && result.color2)
   )
+
     .wrapper
       header
         nav.scroll-nav
@@ -25,31 +26,33 @@ html
 
             p Let's unbox it.
             p Write about how you are feeling today, and you will get a quote and an affirmation to guide your day.
+            p Please write at least 2 sentences to get a result.
 
             form(action="/analyze" method="POST")
-              textarea(name="text" required placeholder="Write about your feelings here...")
+              textarea(name="text" required placeholder="Write your thoughts here...")= submittedText || ''
               button(type="submit") Unbox feelings
 
-          
-        
           if result
-            .result
+            .result#result-section
+              if submittedText
+                .submitted-text
+                  h2 You wrote:
+                  p= submittedText
+
               if result.error
                 p(style="color: red") #{result.error}
               else
                 if result.quote
-                  h2#result-section A quote for you:
+                  h2 A quote for you:
                   p #{result.quote}
 
                 if result.affirmation
                   h2 An affirmation to guide your day:
                   p #{result.affirmation}
-              
-                .reset
-                  a(href="#form-top" class="reset-btn" ) Write new feelings
+
+              .reset
+                a(href="#form-top" class="reset-btn") Write new feelings
 
       footer.side-footer
         p &copy; 
-          span#current-year 
-              
-
+          span#current-year

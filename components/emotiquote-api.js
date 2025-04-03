@@ -11,6 +11,7 @@ import fetch from 'node-fetch';
 // If the fetch fails, it will return a default affirmation
 
 
+
 async function getAffirmation(emotion) {
   try {
     const res = await fetch(`https://emotiquote-api.onrender.com/api/quotes/emotion/${emotion}`);
