@@ -44,6 +44,12 @@ a:hover {
     clip: rect(0 0 0 0);
     white-space: nowrap;
 }
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
   
 
 
@@ -209,60 +215,67 @@ button:hover {
 }
 
 
-  
+@media (max-width: 600px) {
 
+    body {
+      padding: 0.5rem;
+      font-size: 0.85rem;
+    }
   
-/* Spinner style */
-/* #loading-spinner {
-    display: none; 
-    justify-content: center;
-    align-items: center;
-    min-height: 100px;
-    margin-bottom: 1rem;
-} */
-/*   
-#loading-spinner.visible {
-    display: flex;
-} */
-/*   
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid #ccc;
-    border-top-color: #9d0348;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-} */
-
-  /* Hide by default */
-/* .hidden {
-    display: none;
-} */
+    h1 {
+      font-size: 1.25rem;
+      text-align: center;
+    }
   
-/* @keyframes spin {
-    to {
-        transform: rotate(360deg);
-}
-} */
+    h2 {
+      font-size: 1rem;
+    }
   
-
-/* #loading-spinner {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
+    p {
+      font-size: 0.8rem;
+    }
   
-
-#loading-spinner.visible {
-    display: block;
-    opacity: 1;
-} */
+    .form-wrapper,
+    .result {
+      max-width: 100%;
+      margin: 1rem auto;
+      padding: 1.5rem;
+      
+    }
   
+    textarea {
+      font-size: 0.8rem;
+      height: 120px;
+    }
   
+    button,
+    .reset-btn {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+    }
   
-/* for smaller screens, stack the columns */
-@media (max-width: 768px) {
     .grid {
-        gap: 1rem;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .side-footer {
+        display: none;
+    }
+  
+    .submitted-text {
+      font-size: 0.8rem;
+      padding: 0.5rem;
     }
 }
+  
+
+  
+
+  
+  
+
+
+    
+
   

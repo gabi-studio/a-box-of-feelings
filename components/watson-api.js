@@ -23,7 +23,7 @@ async function analyzeWithWatson(text) {
     features: { emotion: { document: true } }
   });
 
-  console.log("Your text:", text);
+  // console.log("Your text:", text);
 
 
   // return the emotion and the original text and the emotion scores
