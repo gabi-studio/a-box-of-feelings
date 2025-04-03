@@ -187,13 +187,13 @@ button:hover {
 }
 
 /* Footer styling */
-.site-footer {
+/* .site-footer {
     text-align: center;
     background: none;
     color: #232320;
     padding: 1rem;
     font-size: 0.5rem;
-}
+} */
 
 .side-footer {
     position: fixed;
@@ -201,9 +201,9 @@ button:hover {
     right: 1rem;
     background-color: none;
     color: #232320;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 12px;
-    font-size: 0.75rem;
+    font-size: 0.70rem;
     z-index: 999;
     opacity: 0.5;
     transition: opacity 0.3s ease;
@@ -215,59 +215,29 @@ button:hover {
 }
 
 
-@media (max-width: 600px) {
-
-    body {
-      padding: 0.5rem;
-      font-size: 0.85rem;
-    }
-  
-    h1 {
-      font-size: 1.25rem;
-      text-align: center;
-    }
-  
-    h2 {
-      font-size: 1rem;
-    }
-  
-    p {
-      font-size: 0.8rem;
-    }
-  
-    .form-wrapper,
-    .result {
-      max-width: 100%;
-      margin: 1rem auto;
-      padding: 1.5rem;
-      
-    }
-  
-    textarea {
-      font-size: 0.8rem;
-      height: 120px;
-    }
-  
-    button,
-    .reset-btn {
-      font-size: 0.8rem;
-      padding: 0.5rem 1rem;
-    }
-  
-    .grid {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  
+@media (max-width: 900px) {
     .side-footer {
-        display: none;
+      position: static;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.75rem;
+      background: none;
+      opacity: 1;
+      margin-top: auto;
     }
   
-    .submitted-text {
-      font-size: 0.8rem;
-      padding: 0.5rem;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  
+    #container {
+      flex: 1;
     }
 }
+  
   
 
   
