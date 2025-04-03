@@ -22,12 +22,15 @@ Deployed at: [https://a-box-of-feelings.onrender.com](https://a-box-of-feelings.
 - [The Quotes Hub API](https://thequoteshub.com/)
 - [CSS Colors API](https://www.csscolorsapi.com/)
 
-### Tech Stack
+> [!TIP]
+> You can use the following text samples to test different inputs to the sentiment analysis:
+> - Today felt heavy. I kept thinking about how distant I’ve become from people I used to be close to. It’s like I’m fading into the background of everyone’s life.
+> - The sun was out and everything just seemed to click. I laughed so much today with my friends that my cheeks hurt. It’s been a while since I felt this light and full of life.
+> - I’m so frustrated by how dismissive they were. I spoke up, and it felt like my words bounced off a wall. Why is it so hard for people to just listen and take responsibility?
+> - I kept double-checking everything today, even though I knew it was fine. My brain just wouldn’t let it go—like something bad would happen if I didn’t keep control. It’s like a constant alarm going off with no clear danger.
+> - That comment was so fake, I could practically hear the insincerity dripping from it. I can't stand when people pretend to care just to look good. It’s honestly gross how performative some behavior can be.
 
-- Node.js
-- Express
-- Pug
-- Vanilla CSS and JavaScript
+
 
 
 
