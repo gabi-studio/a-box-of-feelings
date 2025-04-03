@@ -4,6 +4,9 @@ is a web app that analyzes how you're feeling based on your written thoughts, th
 
 Deployed at: [https://a-box-of-feelings.onrender.com](https://a-box-of-feelings.onrender.com)
 
+[!NOTE]
+The [EmotiQuote API](https://emotiquote-api.onrender.com/) this app is using is deployed on free render and may need to be loaded for the app to receive not just the default affirmation.
+
 ### Features
 
 - Analyze journal-style text using IBM Watson Natural Language Understanding API
